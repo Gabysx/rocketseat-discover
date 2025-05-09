@@ -28,13 +28,14 @@ body{
   background-position: top center;
   background-size:cover; */
   /* background : color image repeat position/size;  shorthand */
-  background:var(--bg-url) top center/cover;
+  background: var(--bg-url) no-repeat top center/cover;
   height: 100vh;
 }
 
 body *{
   font-family: "Inter", sans-serif;
   color: var(--text-color);
+  
 }
 
 .container {
@@ -157,4 +158,14 @@ ul li:hover {
 footer {
   padding: 24px 0px;
   text-align: center;
+}
+
+@media (min-width: 700px){
+	:root {
+		--bg-url: url(./assets/bg-desktop.jpg);
+	
+	}
+	.light-theme {
+		--bg-url: url(./assets/bg-desktop-light.jpg);
+	}
 }
