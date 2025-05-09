@@ -29,6 +29,7 @@ body{
   background-size:cover; */
   /* background : color image repeat position/size;  shorthand */
   background:var(--bg-url) top center/cover;
+  height: 100vh;
 }
 
 body *{
@@ -39,6 +40,7 @@ body *{
 .container {
   width: 100%;
   max-width: 588px;
+  min-width: 360px;
   margin: 56px auto 0px;
   padding: 0px 24px;
 }
